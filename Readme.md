@@ -72,3 +72,13 @@
 #### Example : db.pupil.createIndex( { points: -1 } ), im creating index for field name 'points' in the pupil collection
 
 #### Once the index is created measure the query plan and see the difference.
+
+
+* * *
+
+### How to import CSV File in MongoDB Collection
+
+#### Command : mongoimport -d <DBNAME> -c <CollectionName> --type csv --file <CSV File Name> --headerline
+####   here --headerline is optional, which only requires if your file has top line as headers
+
+#### Example : mongoimport -d sample -c sample --type csv --file C2ImportCalEventSample.csv --headerline
